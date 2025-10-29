@@ -4,10 +4,10 @@ import { ArrowRight, Sparkles } from 'lucide-react';
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-neutral-950" aria-label="Hero">
-      {/* Full-bleed interactive Spline background */}
+      {/* Full-bleed interactive Spline background (dark metallic cubes with subtle green glow) */}
       <div className="absolute inset-0">
         <Spline
-          scene="https://prod.spline.design/2a55a9a7-947f-4013-9c2c-08be65f98c92/scene.splinecode"
+          scene="https://prod.spline.design/Gt5HUob8aGDxOUep/scene.splinecode"
           style={{ width: '100%', height: '100%' }}
         />
       </div>
