@@ -1,6 +1,6 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import KeyboardShowcase from './components/KeyboardShowcase';
+import DesignShowcase from './components/DesignShowcase';
 import AIServices from './components/AIServices';
 
 function App() {
@@ -9,8 +9,8 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        {/* Use the previously implemented tilt‑based keyboard component */}
-        <KeyboardShowcase />
+        {/* Replaced the tactile keyboard section with a new Spline-based design showcase */}
+        <DesignShowcase />
         <AIServices />
       </main>
     </div>
