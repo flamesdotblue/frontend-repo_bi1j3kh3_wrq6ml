@@ -4,21 +4,21 @@ import { ArrowRight, Sparkles } from 'lucide-react';
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-neutral-950" aria-label="Hero">
-      {/* Full-width Spline cover background (interactive by cursor) */}
+      {/* Full-bleed interactive Spline background */}
       <div className="absolute inset-0">
         <Spline
-          scene="https://prod.spline.design/VJLoxp84lCdVfdZu/scene.splinecode"
+          scene="https://prod.spline.design/2a55a9a7-947f-4013-9c2c-08be65f98c92/scene.splinecode"
           style={{ width: '100%', height: '100%' }}
         />
       </div>
 
-      {/* Aurora overlays - do not block interactions */}
+      {/* Soft aurora overlays - non-blocking for pointer interactions */}
       <div className="pointer-events-none absolute inset-0">
         <div
           className="absolute -top-10 left-0 right-0 h-[60vh] opacity-60 mix-blend-screen"
           style={{
             background:
-              'radial-gradient(60% 80% at 10% 0%, rgba(0,255,209,0.25) 0%, rgba(0,0,0,0) 60%),\n                  radial-gradient(60% 80% at 90% 10%, rgba(76,0,255,0.25) 0%, rgba(0,0,0,0) 60%),\n                  radial-gradient(80% 120% at 50% -10%, rgba(0,191,255,0.35) 0%, rgba(0,0,0,0) 70%)',
+              'radial-gradient(60% 80% at 10% 0%, rgba(0,255,209,0.22) 0%, rgba(0,0,0,0) 60%),\n                  radial-gradient(60% 80% at 90% 10%, rgba(76,0,255,0.22) 0%, rgba(0,0,0,0) 60%),\n                  radial-gradient(80% 120% at 50% -10%, rgba(0,191,255,0.30) 0%, rgba(0,0,0,0) 70%)',
           }}
         />
         <div
@@ -41,7 +41,7 @@ export default function Hero() {
         />
       </div>
 
-      {/* Floating luminous orbs for depth */}
+      {/* Floating luminous orbs for additional depth */}
       <div className="pointer-events-none absolute inset-0">
         <span
           className="absolute left-[8%] top-[35%] h-24 w-24 rounded-full bg-cyan-400/30 blur-xl"
@@ -57,7 +57,7 @@ export default function Hero() {
         />
       </div>
 
-      {/* Content */}
+      {/* Foreground content */}
       <div className="relative z-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-28 pb-24 md:pt-36 md:pb-36">
           <div className="max-w-2xl">
