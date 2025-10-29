@@ -1,6 +1,6 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import DesignShowcase from './components/DesignShowcase';
+import LaptopShowcase from './components/LaptopShowcase';
 import AIServices from './components/AIServices';
 
 function App() {
@@ -9,8 +9,8 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        {/* Replaced the tactile keyboard section with a new Spline-based design showcase */}
-        <DesignShowcase />
+        {/* Laptop-focused immersive section replacing the prior design showcase */}
+        <LaptopShowcase />
         <AIServices />
       </main>
     </div>
