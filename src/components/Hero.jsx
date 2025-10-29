@@ -3,43 +3,58 @@ import { ArrowRight, Sparkles } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-neutral-950">
-      {/* Full-width Spline cover background */}
+    <section className="relative overflow-hidden bg-neutral-950" aria-label="Hero">
+      {/* Full-width Spline cover background (interactive by cursor) */}
       <div className="absolute inset-0">
         <Spline
-          scene="https://prod.spline.design/0CT1-dbOQTa-XJKt/scene.splinecode"
+          scene="https://prod.spline.design/EF7JOSsHLk16Tlw9/scene.splinecode"
           style={{ width: '100%', height: '100%' }}
         />
       </div>
 
-      {/* Aurora Australis overlay (pointer-events-none so Spline remains interactive) */}
+      {/* Aurora overlays - do not block interactions */}
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -top-10 left-0 right-0 h-[60vh] opacity-60 mix-blend-screen"
-             style={{
-               background:
-                 'radial-gradient(60% 80% at 10% 0%, rgba(0,255,209,0.25) 0%, rgba(0,0,0,0) 60%),\n                  radial-gradient(60% 80% at 90% 10%, rgba(76,0,255,0.25) 0%, rgba(0,0,0,0) 60%),\n                  radial-gradient(80% 120% at 50% -10%, rgba(0,191,255,0.35) 0%, rgba(0,0,0,0) 70%)'
-             }}
+        <div
+          className="absolute -top-10 left-0 right-0 h-[60vh] opacity-60 mix-blend-screen"
+          style={{
+            background:
+              'radial-gradient(60% 80% at 10% 0%, rgba(0,255,209,0.25) 0%, rgba(0,0,0,0) 60%),\n                  radial-gradient(60% 80% at 90% 10%, rgba(76,0,255,0.25) 0%, rgba(0,0,0,0) 60%),\n                  radial-gradient(80% 120% at 50% -10%, rgba(0,191,255,0.35) 0%, rgba(0,0,0,0) 70%)',
+          }}
         />
-        {/* Soft moving ribbons */}
-        <div className="absolute top-1/3 left-0 right-0 h-48 opacity-50 blur-2xl" style={{
-          background:
-            'linear-gradient(90deg, rgba(0,255,163,0.15), rgba(0,128,255,0.22), rgba(140,0,255,0.18))',
-          maskImage:
-            'radial-gradient(120% 80% at 50% 50%, rgba(0,0,0,0.9), rgba(0,0,0,0.1))'
-        }} />
-        <div className="absolute top-1/2 left-0 right-0 h-64 opacity-40 blur-2xl" style={{
-          background:
-            'linear-gradient(90deg, rgba(0,128,255,0.18), rgba(140,0,255,0.22), rgba(0,255,163,0.15))',
-          maskImage:
-            'radial-gradient(120% 80% at 50% 50%, rgba(0,0,0,0.9), rgba(0,0,0,0.1))'
-        }} />
+        <div
+          className="absolute top-1/3 left-0 right-0 h-48 opacity-50 blur-2xl"
+          style={{
+            background:
+              'linear-gradient(90deg, rgba(0,255,163,0.15), rgba(0,128,255,0.22), rgba(140,0,255,0.18))',
+            maskImage:
+              'radial-gradient(120% 80% at 50% 50%, rgba(0,0,0,0.9), rgba(0,0,0,0.1))',
+          }}
+        />
+        <div
+          className="absolute top-1/2 left-0 right-0 h-64 opacity-40 blur-2xl"
+          style={{
+            background:
+              'linear-gradient(90deg, rgba(0,128,255,0.18), rgba(140,0,255,0.22), rgba(0,255,163,0.15))',
+            maskImage:
+              'radial-gradient(120% 80% at 50% 50%, rgba(0,0,0,0.9), rgba(0,0,0,0.1))',
+          }}
+        />
       </div>
 
-      {/* Floating luminous orbs ("more 3D objects" accent) */}
+      {/* Floating luminous orbs for depth */}
       <div className="pointer-events-none absolute inset-0">
-        <span className="absolute left-[8%] top-[35%] h-24 w-24 rounded-full bg-cyan-400/30 blur-xl" style={{ animation: 'float1 10s ease-in-out infinite' }} />
-        <span className="absolute left-[78%] top-[20%] h-28 w-28 rounded-full bg-fuchsia-500/30 blur-2xl" style={{ animation: 'float2 12s ease-in-out infinite' }} />
-        <span className="absolute left-[20%] top-[70%] h-16 w-16 rounded-full bg-emerald-400/30 blur-lg" style={{ animation: 'float3 11s ease-in-out infinite' }} />
+        <span
+          className="absolute left-[8%] top-[35%] h-24 w-24 rounded-full bg-cyan-400/30 blur-xl"
+          style={{ animation: 'float1 10s ease-in-out infinite' }}
+        />
+        <span
+          className="absolute left-[78%] top-[20%] h-28 w-28 rounded-full bg-fuchsia-500/30 blur-2xl"
+          style={{ animation: 'float2 12s ease-in-out infinite' }}
+        />
+        <span
+          className="absolute left-[20%] top-[70%] h-16 w-16 rounded-full bg-emerald-400/30 blur-lg"
+          style={{ animation: 'float3 11s ease-in-out infinite' }}
+        />
       </div>
 
       {/* Content */}
@@ -65,10 +80,10 @@ export default function Hero() {
                 <ArrowRight size={18} />
               </a>
               <a
-                href="#services"
+                href="#ai-services"
                 className="inline-flex items-center gap-2 rounded-lg border border-white/30 px-5 py-3 font-medium text-white hover:bg-white/10 transition backdrop-blur"
               >
-                Explore services
+                Explore AI services
               </a>
             </div>
             <div className="mt-8 flex items-center gap-4 text-sm text-white/70">
@@ -76,9 +91,9 @@ export default function Hero() {
               <span>•</span>
               <span>Design Systems</span>
               <span>•</span>
-              <span>Performance</span>
+              <span>AI Integrations</span>
               <span>•</span>
-              <span>Accessibility</span>
+              <span>Performance</span>
             </div>
           </div>
         </div>
